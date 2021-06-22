@@ -24,7 +24,7 @@ SECRET_KEY = 'e!n048o&x^z%zovm%w03)!8r+)n)+43d14*s@@d*11wnjk*^(z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
+ 
 ALLOWED_HOSTS = ['127.0.0.1', 'ssaraf0702-resume.herokuapp.com']
 
 
@@ -41,8 +41,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
